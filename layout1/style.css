@@ -208,3 +208,38 @@ p{
 	opacity: 1;
 	background-color: #d40e52;
 }
+
+/*--------Project------------*/
+.project-title{
+	opacity: .6;
+	color:black;
+}
+
+.project{
+	width: 23%;
+	margin:1% 1%;
+	background-color: white;
+	height: 25vh;
+	float:left;
+	opacity: .5;
+}
+
+.project:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+
+.project-info{
+	text-align: center;
+	padding: 25% 0%;
+	font-size: 2em;
+	color: black;
+}
+
+.project-info:hover{
+	color:#d40e52;
+}
+
+/*--------Contact-----------*/
+
+.contact{}
