@@ -1,9 +1,8 @@
-var done=false;
-var set=false;
-
-var name;
-var word;
 function animateName(id) {
+	var done=false;
+	var set=false;
+	var name;
+	var word;
 	return function(){
 		if(!done){
 			var place = document.getElementsByClassName(id)[0];
@@ -42,4 +41,6 @@ function animateName(id) {
 };
 
 var x = animateName("name");
+var y = animateName("name2");
 setInterval(x, 150);
+setInterval(y, 150);
