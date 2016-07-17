@@ -1,38 +1,46 @@
-function animateName() {
-	var name = "lueMirrors";
-	var result = document.getElementById("name").innerHTML; 
-	console.log(result+"here");
-	var curr = result.length;
-	if(curr >= (name.length+1)){
-		result ="";
+function animateName(id) {
+	var done=false;
+	var set=false;
+	var name;
+	var word;
+	return function(){
+		if(!done){
+			var place = document.getElementsByClassName(id)[0];
+			var result = place.innerHTML;
+			var visible = place.style.visibility
+			if(!set && visible!="hidden"){
+				name = result.slice(1,result.length);
+				word=result[0];
+				set =true;
+			}
+			var curr = result.length;
+			if(curr >= (name.length+1)){
+				result ="";
 
+			}
+			else if (curr===0){
+				result = word;
+			}
+
+			else{
+				result += name[curr-1];
+			}
+
+			document.getElementsByClassName(id)[0].innerHTML=result;
+			if(result==word+name){
+				done=true; 
+				document.getElementsByClassName("text")[0].style.visibility = "visible";
+				var hides = document.getElementsByClassName("hideMe");
+				for(var i=0; i<hides.length; ++i){
+					hides[i].style.visibility = "visible";
+				}
+				
+			}
+		}
 	}
-	else if (curr===0){
-		result = "B";
-	}
-
-	else{
-		result += name[curr-1];
-	}
-	
-	document.getElementById("name").innerHTML = result;
-	console.log(result);
-
-
-	
 };
 
-var mul = 0;
-function zoom(){
-	var incr = .1;
-	if(mul >= 2){
-		incr = -.1;
-	}
-
-	else if(mul <= 0 && incr <=0){
-		incr = incr * (-1);
-	}
-
-	mul += incr;
-	document.getElementById("data").style.fontSize = mul+"em";
-}
+var x = animateName("name");
+var y = animateName("name2");
+setInterval(x, 150);
+setInterval(y, 150);
