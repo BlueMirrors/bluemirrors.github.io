@@ -12,6 +12,9 @@ body{
 	position: relative;
 }
 
+.hideME{
+	visibility: hidden;
+}
 #nav-bar{
 	height: 50px;
 	background-color:blue;
@@ -242,4 +245,28 @@ p{
 
 /*--------Contact-----------*/
 
-.contact{}
+.contact{
+	font-size: 3em;
+
+}
+
+.web-link{
+	color:white;
+
+	padding: 5px;
+}
+
+.web-link:hover{
+	color:#d40e52;
+}
+
+.fast-link{
+	background-color: white;
+	background-color: #d40e52;
+	opacity: .8;
+}
+
+.fast-link:hover{
+	opacity: 1;
+	color:white;
+}
