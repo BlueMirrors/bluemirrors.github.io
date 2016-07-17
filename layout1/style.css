@@ -1,0 +1,165 @@
+*{
+	box-sizing: border-box;
+	margin:0px;
+	padding: 0px;
+}
+
+body{
+	background-color: blue;
+	background: url("background.jpg") no-repeat center center fixed;
+	background-size: cover;
+	font-family: "Josefin Slab";
+	position: relative;
+}
+
+#nav-bar{
+	height: 50px;
+	background-color:blue;
+	position: relative;
+	opacity: .7;
+
+}
+
+a{
+	color:white;
+}
+#nav-bar:hover{
+	opacity: 1;
+}
+.nav-name{
+	font-size: 1.5em;
+	margin:5%;
+	line-height: 50px;
+	padding: 1%;
+	height: 50px;
+}
+
+.nav-name:hover{
+	color:white;
+	background-color:black; 
+}
+
+#brand-bar {
+	margin: auto;
+}
+.brand-name{
+	font-size: 5em;
+	width: 50%;
+	text-align: center;
+	color:white;
+	background-color:blue;
+	position: absolute;
+	top: 50vh;
+	left: 26%;
+	padding: 1%;
+	opacity: .6;
+}
+
+a {
+	text-decoration: none;
+}
+
+.brand-name:hover{
+	opacity: 1;
+
+
+}
+
+hr {
+	border: 3px solid white;
+}
+
+.active{
+	background-color: black
+
+}
+
+/*-----about-us------*/
+
+.content{
+	margin-top:6%;
+	height: 70vh;
+	width: 100%;
+	background-color:blue;
+	opacity: .8;
+	padding: 1%;
+	position: relative;
+
+}
+
+.title{
+	text-align: center;
+	color:white;
+	font-size: 4em;
+}
+
+.text{
+	text-align: justify;
+	border:1px solid white;
+	overflow: auto;
+	height: 80%;
+	color:white;
+	font-size: 1.5em;
+	padding: 10px;
+	visibility: hidden;
+}
+
+.text:hover{
+	opacity: 1;
+	background-color:blue;
+}
+
+
+p{
+	margin:30px;
+	line-height:1.3em;
+	text-align:center;
+}
+
+
+/*----People--------*/
+
+.person{
+	width: 48%;
+	margin: 0% 1%;
+	float:left;
+}
+
+.person:hover{
+	opacity: 1;
+}
+
+.person-name{
+	background-color:black;
+	border: 1px solid white;
+}
+
+.person-info{
+
+	height: 50vh;
+	margin-top: 5%;
+	width: 100%;
+	border: 1px solid white;
+	padding: 10px;
+}
+
+.person-pic{
+	height: 150px;
+	width: 150px;
+	border-radius: 100px;
+	background-color: white;
+	background: url("person_shivam.jpg") no-repeat center center;
+}
+
+#shivam{
+	background: url("person_shivam.jpg") no-repeat center center;
+}
+#shivratan{
+	background: url("person_shivratan.jpg") no-repeat center center;
+}
+
+.person-link{
+	color:white;
+	font-size: 1.5em;
+	padding: 10px;
+}
